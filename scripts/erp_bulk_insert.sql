@@ -9,8 +9,9 @@ Create or alter procedure bronze.load_erp_bronze_data
 Create or alter procedure bronze.load_erp_bronze_data
 AS
 BEGIN
-    DECLARE @startTime DATETIME, @endTime DATETIME;
+    DECLARE @startTime DATETIME, @endTime DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
     BEGIN TRY
+        SET @batch_start_time = GETDATE();  -- Record the start time of the batch operation
     -- Truncate the tables if they already exist to ensure fresh data insertion
         IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
         BEGIN
@@ -89,8 +90,10 @@ BEGIN
         SET @endTime = GETDATE();  -- Record the end time of the operation
         PRINT '>> LOAD DURATION: ' + CAST(DATEDIFF(SECOND, @startTime, @endTime) AS NVARCHAR(10)) + ' seconds';
         PRINT 'Bulk insert into bronze.erp_px_cat_g1v2 completed.';
+        SET @batch_end_time = GETDATE();  -- Record the end time of the batch operation
         PRINT '================================================================';
         PRINT '>>All ERP data has been successfully loaded into the bronze layer.';
+        PRINT '>>Batch operation completed in: ' + CAST(DATEDIFF(SECOND, @batch_start_time, @batch_end_time) AS NVARCHAR(10)) + ' seconds';
         PRINT '================================================================';
     END TRY
     BEGIN CATCH

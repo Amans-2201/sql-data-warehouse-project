@@ -10,8 +10,10 @@ Create or alter procedure bronze.load_crm_bronze_data
 CREATE OR ALTER PROCEDURE bronze.load_crm_bronze_data   
 AS
 BEGIN
-    DECLARE @startTime DATETIME, @endTime DATETIME;
+    DECLARE @startTime DATETIME, @endTime DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
     BEGIN TRY
+        SET @batch_start_time = GETDATE();  -- Record the start time of the batch operation
+        -- Truncate the tables if they already exist to ensure fresh data insertion
         IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
         BEGIN
             PRINT '================================================================';
@@ -86,10 +88,12 @@ BEGIN
             FORMAT = 'CSV'          -- Specify the format as CSV
         );
         SET @endTime = GETDATE();  -- Record the end time of the operation
+        SET @batch_end_time = GETDATE();  -- Record the end time of the batch operation
         PRINT '>> LOAD DURATION: ' + CAST(DATEDIFF(SECOND, @startTime, @endTime) AS NVARCHAR(10)) + ' seconds';
         PRINT '>>Bulk insert into bronze.crm_sales_details completed.';
         PRINT '================================================================';
         PRINT '>>All CRM data has been successfully loaded into the bronze layer.';
+        PRINT '>>Batch operation completed in: ' + CAST(DATEDIFF(SECOND, @batch_start_time, @batch_end_time) AS NVARCHAR(10)) + ' seconds';
         PRINT '================================================================';
     END TRY
     BEGIN CATCH
