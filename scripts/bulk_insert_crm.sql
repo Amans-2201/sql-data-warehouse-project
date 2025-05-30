@@ -4,6 +4,7 @@ GO
 
 -- Bulk Insert CRM Customer Information
 Bulk Insert bronze.crm_cust_info
+-- Save your .csv files in the specified path or modify the path accordingly
 FROM 'D:\Github\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
 WITH (
     FIRSTROW = 2,           -- Skip the header row
