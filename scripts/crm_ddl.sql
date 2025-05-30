@@ -35,6 +35,7 @@ CREATE TABLE bronze.crm_prd_info (
 IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
     DROP TABLE bronze.crm_sales_details;        
 GO
+
 -- Create table Sales Details in bronze layer for CRM
 -- This table captures sales transactions including order details, customer information, and product details
 CREATE TABLE bronze.crm_sales_details (
