@@ -2,7 +2,7 @@
 
 This project focuses on building a robust data warehouse and performing insightful analytics. It includes scripts for data extraction, transformation, and loading (ETL), as well as tools for data analysis and visualization. 
 
-Project Requirements
+🚀 Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
 
