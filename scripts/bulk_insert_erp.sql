@@ -3,7 +3,7 @@ GO
 -- This script inserts data into the bronze layer for ERP Tables
 -- Bulk Insert ERP Customer AZ12    
 Bulk Insert bronze.erp_cust_az12
--- Save your .csv files in the specified path or modify the path accordingly
+-- Save the .csv dataset files in the specified path or modify the path accordingly
 FROM 'D:\Github\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
 WITH (
     FIRSTROW = 2,           -- Skip the header row
