@@ -1,5 +1,9 @@
 use DataWarehouse;
 GO
+-- Check If the table bronze.crm_cust_info already exists and drop it if it does
+IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
+    DROP TABLE bronze.crm_cust_info;
+
 -- Create table in bronze layer for CRM customer information    
 -- This table contains customer details including ID, name,
 CREATE TABLE bronze.crm_cust_info (
@@ -12,6 +16,10 @@ CREATE TABLE bronze.crm_cust_info (
     cst_create_date DATE             -- Customer Creation Date
 );
 GO
+-- Check If the table bronze.crm_prd_info already exists and drop it if it does
+IF OBJECT_ID('bronze.crm_prd_info', 'U') IS NOT NULL
+    DROP TABLE bronze.crm_prd_info;
+
 -- Create table product information in bronze layer for CRM
 -- This table contains details about products including their cost, line, and availability dates
 CREATE TABLE bronze.crm_prd_info (
@@ -23,8 +31,9 @@ CREATE TABLE bronze.crm_prd_info (
     prd_start_date DATE,            -- Product Start Date
     prd_end_date DATE,              -- Product End Date
 );
-
-
+-- Check If the table bronze.crm_sales_details already exists and drop it if it does
+IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
+    DROP TABLE bronze.crm_sales_details;        
 GO
 -- Create table Sales Details in bronze layer for CRM
 -- This table captures sales transactions including order details, customer information, and product details
