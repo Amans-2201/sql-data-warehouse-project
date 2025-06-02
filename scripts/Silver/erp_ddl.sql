@@ -15,12 +15,12 @@ CREATE TABLE silver.erp_cust_az12 (
 );
 GO
 -- Check If the table silver.erp_loc_a10 already exists and drop it if it does
-IF OBJECT_ID('silver.erp_loc_a10', 'U') IS NOT NULL
-    DROP TABLE silver.erp_loc_a10;
+IF OBJECT_ID('silver.erp_loc_a101', 'U') IS NOT NULL
+    DROP TABLE silver.erp_loc_a101;
 GO
 
 -- Create table LOC_A101 with columns CID,CNTRY as both NVARCHAR
-CREATE TABLE silver.erp_loc_a10 (
+CREATE TABLE silver.erp_loc_a101 (
     CID NVARCHAR(50),  -- Customer ID
     CNTRY NVARCHAR(50), -- Country
     dwh_create_date DATETIME2 DEFAULT GETDATE() -- Data Warehouse Creation Date
@@ -39,3 +39,4 @@ CREATE TABLE silver.erp_px_cat_g1v2 (
     Maintenance NVARCHAR(5), -- Maintenance Information
     dwh_create_date DATETIME2 DEFAULT GETDATE() -- Data Warehouse Creation Date
 );
+
