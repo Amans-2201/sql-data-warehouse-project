@@ -2,12 +2,12 @@ Use DataWarehouse;
 GO
 /*
 ============================================================
-This script inserts data into the bronze layer for ERP Tables
-Create or alter procedure bronze.load_crm_bronze_data
+This script inserts data into the bronze layer for CRM Tables
+Create or alter procedure bronze.load_crm_bronze_tables
 ============================================================
 */
 
-CREATE OR ALTER PROCEDURE bronze.load_crm_bronze_data   
+CREATE OR ALTER PROCEDURE bronze.load_crm_bronze_tables   
 AS
 BEGIN
     DECLARE @startTime DATETIME, @endTime DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
@@ -111,7 +111,7 @@ BEGIN
 END
 -- Execute the procedure to load data into the bronze layer CRM
 GO
-EXECUTE bronze.load_crm_bronze_data;
+EXECUTE bronze.load_crm_bronze_tables;
 GO
 --Verify the data has been inserted correctly
 GO
