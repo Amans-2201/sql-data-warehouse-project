@@ -12,7 +12,7 @@ CREATE TABLE silver.crm_cust_info (
     cst_key NVARCHAR(50),            -- Customer Key
     cst_firstname NVARCHAR(50),      -- Customer First Name
     cst_lastname NVARCHAR(50),       -- Customer Last Name
-    cst_material_status NVARCHAR(50), -- Customer Material Status
+    cst_marital_status NVARCHAR(50), -- Customer Marital Status
     cst_gndr NVARCHAR(50),           -- Customer Gender
     cst_create_date DATE,             -- Customer Creation Date
     dwh_create_date DATETIME2 DEFAULT GETDATE() -- Data Warehouse Creation Date
