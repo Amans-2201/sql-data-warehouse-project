@@ -3,10 +3,10 @@ GO
 /*
 ============================================================
 This script inserts data into the bronze layer for ERP Tables
-Create or alter procedure bronze.load_erp_bronze_data
+Create or alter procedure bronze.load_erp_bronze_tables
 ============================================================
 */
-Create or alter procedure bronze.load_erp_bronze_data
+Create or alter procedure bronze.load_erp_bronze_tables
 AS
 BEGIN
     DECLARE @startTime DATETIME, @endTime DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
@@ -111,7 +111,7 @@ BEGIN
 END
 -- execute the procedure to load data into the bronze layer ERP
 GO
-EXECUTE bronze.load_erp_bronze_data;
+EXECUTE bronze.load_erp_bronze_tables;
 GO
 -- Verify the data has been inserted correctly  
 SELECT COUNT(*) FROM bronze.erp_cust_az12;
