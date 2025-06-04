@@ -2,13 +2,15 @@
 
 This project focuses on building a robust data warehouse and performing insightful analytics. It includes scripts for data extraction, transformation, and loading (ETL), as well as tools for data analysis and visualization.
 
-## Important Links
+## 🔗 Important Links
 
-#### - [Datasets](datasets): Access to project datasets(csv files)
+#### 📂 > [Datasets](datasets): Access to project datasets(csv files)
 
-#### - [Documentation](docs): Access to project documentation
+#### 📚 > [Documentation](docs): Access to project documentation
 
-#### - [Scripts](scripts): Access to project scripts
+#### 📜 > [Scripts](scripts): Access to project scripts
+
+---
 
 
 ## 🚀 Project Requirements
