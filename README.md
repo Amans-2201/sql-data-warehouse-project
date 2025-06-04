@@ -6,9 +6,7 @@ This project focuses on building a robust data warehouse and performing insightf
 
 ## 📂 Datasets : Access to project datasets(csv files)
 
-- [Customer Information Dataset](datasets/source_crm/cust_info.csv)
-- [Product Information Dataset](datasets/source_crm/prd_info.csv)
-- [Sales Details Dataset](datasets/source_crm/sales_details.csv)
+- [Datasets](datasets)
 
 
 ## 🚀 Project Requirements
