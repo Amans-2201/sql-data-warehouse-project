@@ -39,6 +39,20 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
+
+### Data Architecture
+The data architecture for this project is designed to efficiently manage and process data across three distinct layers: Bronze, Silver, and Gold. The Bronze Layer serves as the initial staging area, where raw data is ingested from source systems with minimal transformations. The Silver Layer focuses on data cleansing, transformation, and integration, applying business rules and ensuring data quality. Finally, the Gold Layer provides refined and aggregated data, optimized for analytical reporting and business intelligence, allowing stakeholders to make informed decisions based on accurate and timely insights.
+
+![Data Architecture](docs/Images/Data_Architecture.png)
+
+#### Data Layering
+The data will be structured in three layers:
+*   **Bronze Layer**: The raw data imported from the source systems, with minimal transformations.
+*   **Silver Layer**: The cleansed and transformed data, applying business rules and data quality checks.
+*   **Gold Layer**: The refined and aggregated data, optimized for reporting and analytics.
+
+---
+
 ## 📁 Repository Structure
 
 ```
