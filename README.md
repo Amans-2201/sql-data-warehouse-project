@@ -39,6 +39,42 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
+## 📁 Repository Structure
+
+```
+- datasets/
+  - source_crm/
+    - cust_info.csv
+    - prd_info.csv
+    - sales_details.csv
+  - source_erp/
+    - erp_data.csv
+
+- docs/
+  - Catalog/
+    - data_catalog.md
+  - Guidelines.md
+
+- scripts/
+  - Bronze/
+    - init_database.sql
+    - crm_ddl.sql
+    - crm_bulk_insert.sql
+  - Silver/
+    - crm_ddl.sql
+    - crm_insert.sql
+    - erp_ddl.sql
+  - Gold/
+    - integration.sql
+
+- tests/
+  - quality_checks_gold.sql
+
+- README.md
+- LICENSE
+```
+
+
 ---
 
 ## 🛡️ License
