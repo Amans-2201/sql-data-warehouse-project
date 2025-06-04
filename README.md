@@ -42,36 +42,35 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ## 📁 Repository Structure
 
 ```
-- datasets/
-  - source_crm/
-    - cust_info.csv
-    - prd_info.csv
-    - sales_details.csv
-  - source_erp/
-    - erp_data.csv
-
-- docs/
-  - Catalog/
-    - data_catalog.md
-  - Guidelines.md
-
-- scripts/
-  - Bronze/
-    - init_database.sql
-    - crm_ddl.sql
-    - crm_bulk_insert.sql
-  - Silver/
-    - crm_ddl.sql
-    - crm_insert.sql
-    - erp_ddl.sql
-  - Gold/
-    - integration.sql
-
-- tests/
-  - quality_checks_gold.sql
-
-- README.md
-- LICENSE
+sql-data-warehouse-project/
+│
+├── datasets/
+│
+├── docs/
+│   └── Catalog/
+│       └── data_catalog.md
+│   └── Images/
+│       ├── Bronze_Layer.png
+│       ├── Data_Architecture.png
+│       ├── Data_Model.png
+│       ├── DataFlow.png
+│       ├── Integration_Model.png
+│       └── Silver_layer.png
+│
+├── scripts/
+│   ├── Bronze/
+│   ├── Gold/
+│   └── Silver/
+│
+├── tests/
+│   ├── quality_checks_gold.sql
+│   └── quality_checks_silver.sql
+│
+├── .gitattributes
+├── .gitignore
+├── Guidelines.md
+├── LICENSE
+├── README.md
 ```
 
 
