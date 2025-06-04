@@ -12,6 +12,10 @@ This project focuses on building a robust data warehouse and performing insightf
 
 - [Documentation](docs)
 
+### 📜 Scripts : Access to project scripts
+
+- [SQL Scripts](scripts)
+
 
 ## 🚀 Project Requirements
 
