@@ -2,6 +2,15 @@
 
 This project focuses on building a robust data warehouse and performing insightful analytics. It includes scripts for data extraction, transformation, and loading (ETL), as well as tools for data analysis and visualization.
 
+## Important Links
+
+## 📂 Datasets : Access to project datasets(csv files)
+
+- [Customer Information Dataset](datasets/source_crm/cust_info.csv)
+- [Product Information Dataset](datasets/source_crm/prd_info.csv)
+- [Sales Details Dataset](datasets/source_crm/sales_details.csv)
+
+
 ## 🚀 Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
