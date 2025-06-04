@@ -4,17 +4,11 @@ This project focuses on building a robust data warehouse and performing insightf
 
 ## Important Links
 
-### 📂 Datasets : Access to project datasets(csv files)
+### 📂 - [Datasets](datasets): Access to project datasets(csv files)
 
-- [Datasets](datasets)
+### 📚 - [Documentation](docs): Access to project documentation
 
-### 📚 Documentation : Access to project documentation
-
-- [Documentation](docs)
-
-### 📜 Scripts : Access to project scripts
-
-- [SQL Scripts](scripts)
+### 📜 - [Scripts](scripts): Access to project scripts
 
 
 ## 🚀 Project Requirements
