@@ -2,6 +2,8 @@
 
 This project focuses on building a robust data warehouse and performing insightful analytics. It includes scripts for data extraction, transformation, and loading (ETL), as well as tools for data analysis and visualization.
 
+---
+
 ## 🔗 Important Links
 
 #### 📂 > [Datasets](datasets): Access to project datasets(csv files)
@@ -39,6 +41,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
+---
 
 ### Data Architecture
 The data architecture for this project is designed to efficiently manage and process data across three distinct layers: Bronze, Silver, and Gold. The Bronze Layer serves as the initial staging area, where raw data is ingested from source systems with minimal transformations. The Silver Layer focuses on data cleansing, transformation, and integration, applying business rules and ensuring data quality. Finally, the Gold Layer provides refined and aggregated data, optimized for analytical reporting and business intelligence, allowing stakeholders to make informed decisions based on accurate and timely insights.
