@@ -4,9 +4,13 @@ This project focuses on building a robust data warehouse and performing insightf
 
 ## Important Links
 
-## 📂 Datasets : Access to project datasets(csv files)
+### 📂 Datasets : Access to project datasets(csv files)
 
 - [Datasets](datasets)
+
+### 📚 Documentation : Access to project documentation
+
+- [Documentation](docs)
 
 
 ## 🚀 Project Requirements
